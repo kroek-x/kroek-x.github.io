@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            margin: 2px;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+            background: #1abc9c;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: #f5deb3;
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Covid Stats</h1>
+        <p>With a <b>flexible</b> layout</p>
+    </div>
+    <div class="navbar">
+        <a href="#North">North</a>
+        <a href="#South">South</a>
+    </div>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>DMHTT</h2>
+            <ul>
+                <li>D: Distancing</li>
+                <li>M: Mask wearing</li>
+                <li>H: Hand washing</li>
+                <li>T: Testing</li>
+                <li>T: Thai Chana</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2 id="North">covid deaths in different countries</h2>
+            <h5>Title description, Dec 7,2017</h5>
+            <img src="images/east-north.jpg"> 
+            <img src="images/central.jpg"> 
+            <p>
+                At a time when Thailand is faced with a tough battle against COVID-19
+                and new variants, it’s more important than ever for health authorities
+                to relay important messages to the Thai and non-Thai population
+                – especially with the two million workers from neighbouring countries
+                including Cambodia, Laos, and Myanmar.
+                Health literacy plays a crucial role in helping to reduce transmission
+                and allows the public to understand how the virus spreads and know how
+                to protect themselves against it. The WHO and implementing partners
+                embarked on a project to translate a guide to COVID-19 vaccines
+                from Thai into English, Khmer, Lao, and Burmese.
+                This comprehensive guide provides details about the virus and its
+                variants as well as vaccines – the key to ending this pandemic.
+              </p>
+            </br> 
+            <img id="South" src="images/west-south.jpg"> 
+            <img src="images/northeast.jpg"> 
+            <p>
+                At a time when Thailand is faced with a tough battle against COVID-19
+                and new variants, it’s more important than ever for health authorities
+                to relay important messages to the Thai and non-Thai population
+                – especially with the two million workers from neighbouring countries
+                including Cambodia, Laos, and Myanmar.
+                Health literacy plays a crucial role in helping to reduce transmission
+                and allows the public to understand how the virus spreads and know how
+                to protect themselves against it. The WHO and implementing partners
+                embarked on a project to translate a guide to COVID-19 vaccines
+                from Thai into English, Khmer, Lao, and Burmese.
+                This comprehensive guide provides details about the virus and its
+                variants as well as vaccines – the key to ending this pandemic.
+              </p>
+            </br> 
+        </div>
+    </div>
+</body>
+
+</html>
