@@ -10,7 +10,7 @@
       var listOfPrimeResult = [];
       console.log(parseInt(inputPromt));
       if(parseInt(inputPromt) > 0 && inputPromt % 1 == 0){
-            for(let i = 2 ; i < inputPromt ; i++){
+            for(let i = 2 ; i <= inputPromt ; i++){
               if(isPrime(i)){
                 listOfPrimeResult.push(i);
               }
