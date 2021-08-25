@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script src="./lib/problem1.js"></script>
+  <script>
+    while (true) {
+      var inputPromt = prompt("Enter a positive integer");
+      var listOfPrimeResult = [];
+      console.log(parseInt(inputPromt));
+      if(parseInt(inputPromt) > 0 && inputPromt % 1 == 0){
+            for(let i = 2 ; i < inputPromt ; i++){
+              if(isPrime(i)){
+                listOfPrimeResult.push(i);
+              }
+            }
+        if(listOfPrimeResult.length == 0){
+            continue;
+        }
+        alert("For n = " + inputPromt +" prime numbers are " + listOfPrimeResult);
+        break;
+      }
+      else {
+        continue;
+      }
+    }
+
+  </script>
+
+
+<h1>Write the web app to prompt accepting for a positive integer number</h1>
+If the entered text is not a positive integer number, then the web app will keep asking for a number until the valid positive integer is entered
+If the entered text is a positive integer, then the app will print prime numbers that are not greater than that given positive integer
+<b>Hint:</b>
+<ul>
+  <li>you may want to use loop with label </li>
+  <li>you may want to use array with push function</li>
+</ul>
+
+Please capture and submit the figures of your code and output (save files using your student ID in the filename with lab # and prob #  such as 5829-lab5-prob1-1.png), and please also submit the link of the URL of your web page in the private comment
+
+</body>
+</html>
