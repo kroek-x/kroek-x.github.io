@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <script src="./lib/problem2.js"></script>
+  <script>
+    var listOfPositiveInt = [];
+    while (true) {
+      var inputPromt = readInput();
+      console.log(parseInt(inputPromt));
+
+      if(parseInt(inputPromt) < 0 ) {
+        console.log(listOfPositiveInt);
+        displayStats(listOfPositiveInt);
+        break;
+      }
+      else {
+            if(parseInt(inputPromt) > 0 || (listOfPositiveInt.length == 0 && parseInt(inputPromt) == 0) ){
+                listOfPositiveInt.push(parseInt(inputPromt));
+            }
+            continue;
+      }
+
+    }
+
+  </script>
+
+<center><h2>Statistics Calculator!</h2></center>
+<br>
+<h1>Write the web app to prompt accepting for positive integers until
+the user enters a negative integer</h1>
+<br>
+<ul>
+    <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until
+        the valid positive integer is entered</li>
+    <li>If the entered text is a negative integer, then the web app will show the statistics (average, min, max) of
+        all entered positive integers</li>
+</ul>
+<br>
+<b>Note:</b>
+
+<ol>
+    <li>You need to implement functions to check whether an entered text is a positive integer or not and
+        whether an entered text is a negative integer or not</li>
+    <li>You need to implement functions to compute average, min, and max of a list of integers</li>
+</ol>
+</body>
+</html>
