@@ -1,0 +1,16 @@
+<script>
+    function circle(radius, height) {
+        this.radius = radius;
+        this.height = height;
+        this.volume = () => {
+            return (Math.PI * radius * radius * height);
+        };
+
+    }
+    radius = Number(prompt("Enter radius of a cylinder"));
+    height = Number(prompt("Enter height of a cylinder"));
+
+    var c = new circle(radius, height);
+
+    alert('The volume of a cylinder is ' + c.volume().toFixed(4));
+</script>
